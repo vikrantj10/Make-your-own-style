@@ -50,7 +50,7 @@ response.setHeader("cache-control","no-cache,no-store,must-revalidate");
                             <option>XL</option>
                             <option>XXL</option>
                             </select>
-                       <input type="submit" value="Submit" style="width: 100px;height: 25px;border-radius: 30px;background-color: black;color: white">
+                       <input type="submit" onclick="alert('Order has been successfull placed')" value="Submit" style="width: 100px;height: 25px;border-radius: 30px;background-color: black;color: white">
                  
                     </form>
 

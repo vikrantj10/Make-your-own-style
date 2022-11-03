@@ -8,7 +8,7 @@
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
+<body style="background-image: url('001.png')">
 <%
 DesignerModel dm = new DesignerModel();
 dm=(DesignerModel)session.getAttribute("dm"); 

@@ -27,7 +27,7 @@
 
 
 
-<body> 
+<body style="background-image: url('001.png')"> 
     <div style="background-image: url('001.png');background-size: cover;background-repeat: no-repeat; background-position: center;">
 
     <div style=" background: linear-gradient(to right, #000066 0%, #ff6600 100%); height:12%;border-radius: 12px">

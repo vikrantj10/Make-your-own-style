@@ -26,7 +26,7 @@
     }
 </style>
 
-<body> 
+<body style="background-image: url('001.png')"> 
 <%
 CustomerModel cm = new CustomerModel();
 cm=(CustomerModel)session.getAttribute("cm"); 

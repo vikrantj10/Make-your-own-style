@@ -25,7 +25,7 @@
     }
 </style>
 
-<body> 
+<body style="background-image: url('001.png')"> 
 <div style="background-image: url('001.png');background-size: cover;background-repeat: no-repeat; background-position: center;">
 
 

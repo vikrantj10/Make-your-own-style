@@ -26,7 +26,7 @@
     }
 </style>
 
-<body>
+<body style="background-image: url('001.png')">
 <%
 DesignerModel dm = new DesignerModel();
 dm=(DesignerModel)session.getAttribute("dm"); 
