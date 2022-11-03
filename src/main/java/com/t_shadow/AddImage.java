@@ -6,6 +6,7 @@ import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.util.Queue;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
@@ -66,18 +67,29 @@ public class AddImage extends HttpServlet {
 			OrderModel om = new OrderModel();
 			String Ordered_Date = request.getParameter("Ordered_Date");
 			String Product_Name = request.getParameter("Product_Name");
+			String size = request.getParameter("size");
+			int qty = Integer.parseInt(request.getParameter("qty"));
 			om.setImage(imageFileName);
 			om.setOrdered_Date(Ordered_Date);
 			om.setProduct_Name(Product_Name);
+			om.setQty(qty);
+			om.setSize(size);
 			Class.forName("com.mysql.jdbc.Driver");
 			connection=DriverManager.getConnection("jdbc:mysql://localhost:3306/t_shadow","root","root");
 			PreparedStatement stmt;
-			String query="insert into order_details(Cust_Id,Image,Ordered_Date,Product_Name) values(?,?,?,?)";
+			String query="insert into order_details(Cust_Id,Designer_Id,Image,Ordered_Date,Product_Name,price,qty,size) values(?,?,?,?,?,?,?,?)";
 			stmt=connection.prepareStatement(query);
+			Queue<Integer> q = (Queue<Integer>) s.getAttribute("q");
 			stmt.setInt(1,cm.getCust_Id());
-			stmt.setString(2,om.getImage());
-			stmt.setString(3,om.getOrdered_Date());
-			stmt.setString(4,om.getProduct_Name());
+			stmt.setInt(2,q.peek());
+			int did = q.remove();
+			q.add(did);
+			stmt.setString(3,om.getImage());
+			stmt.setString(4,om.getOrdered_Date());
+			stmt.setString(5,om.getProduct_Name());
+			stmt.setInt(6, 299*om.getQty());
+			stmt.setInt(7,om.getQty());
+			stmt.setString(8, om.getSize());
 			int row=stmt.executeUpdate(); // it returns no of rows affected.
 			
 			if(row>0)

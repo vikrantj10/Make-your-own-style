@@ -1,3 +1,6 @@
+<%@page import="com.t_shadow.UserDao"%>
+<%@page import="java.util.Queue"%>
+<%@page import="java.util.ArrayDeque"%>
 <%@page import="com.t_shadow.CustomerModel"%>
 <%@page import="com.t_shadow.LoginDao"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
@@ -18,6 +21,10 @@
    
    if(cm!=null)
    {
+	   Queue<Integer> q = new ArrayDeque<>();
+	   UserDao ud = new UserDao();
+	   ud.getdesigner(q);
+	   session.setAttribute("q",q);
 	   session.setAttribute("cm", cm);
 	   response.sendRedirect("CustomerWelcomePage.jsp");
    }

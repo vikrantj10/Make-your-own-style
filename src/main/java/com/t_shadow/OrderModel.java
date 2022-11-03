@@ -1,8 +1,26 @@
 package com.t_shadow;
 
 public class OrderModel {
-int Order_Id, Cust_Id, Designer_Id;
-String Image, Ordered_Status, Ordered_Date, Ordered_Delievery, Product_Name;
+int Order_Id, Cust_Id, Designer_Id, price, qty;
+String Image, Ordered_Status, Ordered_Date, Ordered_Delievery, Product_Name, size;
+public int getPrice() {
+	return price;
+}
+public void setPrice(int price) {
+	this.price = price;
+}
+public int getQty() {
+	return qty;
+}
+public void setQty(int qty) {
+	this.qty = qty;
+}
+public String getSize() {
+	return size;
+}
+public void setSize(String size) {
+	this.size = size;
+}
 public int getOrder_Id() {
 	return Order_Id;
 }

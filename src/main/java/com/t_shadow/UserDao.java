@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.Queue;
 
 public class UserDao {
 	public void Insert(CustomerModel cm) throws ClassNotFoundException, SQLException
@@ -94,5 +95,14 @@ public class UserDao {
 		f=true;
 		return f;
 		
+	}
+	public void getdesigner(Queue<Integer> q) throws SQLException, ClassNotFoundException
+	{
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/t_shadow","root","root");
+		PreparedStatement ps = con.prepareStatement("select designer_id from designer");
+		ResultSet rs = ps.executeQuery();
+		while(rs.next())
+			q.add(rs.getInt(1));
 	}
 }
