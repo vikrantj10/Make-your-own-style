@@ -51,7 +51,7 @@
 
     a {
         text-decoration: none;
-        color: white;
+        color: blue;
 
     }
 
@@ -125,7 +125,8 @@ response.setHeader("cache-control","no-cache,no-store,must-revalidate");
             </div>
         </div>
         <button onclick="myFunction()"
-            style="height: 42%; border-radius: 17px;margin-left: 10%; margin-top: -15%;">Download Tshirt</button>
+            style="height: 42%; border-radius: 17px;margin-left: 7%;
+    margin-top: -12%;">Download Tshirt</button>
         <p style="margin-left: 33%;font-size: 16px;"">To remove a loaded picture on the T-Shirt select it and press the <kbd>DEL</kbd> key.</p>
                             <!-- The select that will allow the user to pick one of the static designs -->
                             <br>
@@ -182,6 +183,7 @@ response.setHeader("cache-control","no-cache,no-store,must-revalidate");
                         <option value="#0080ff">Blue</option>
                         <option value="#008000">Green</option>
                         <option value="#ff0">Yellow</option>
+                        
                     </select>
                 </td>
             </tr>
@@ -207,34 +209,7 @@ response.setHeader("cache-control","no-cache,no-store,must-revalidate");
                         <label for="tshirt-final" style="font-size: 24px;"> As final step,download your T-shirt:</label>
                     </td>
                 </tr>
-
-                <tr>
-                    <td><label for="tshirt-size" style="font-size: 24px;">T-Shirt Size:</label>
-                        <select name="size" id="tshirt-size" style="height: 26px;">
-                            <option>Select Size</option>
-                            <option>XS</option>
-                            <option>S</option>
-                            <option>M</option>
-                            <option>L</option>
-                            <option>XL</option>
-                            <option>XXL</option>
-                </tr>
                 </td>
-
-                <tr>
-                    <td><label for="tshirt-quantity" style="font-size: 24px;">Quantity:</label>
-                        <select name="qty" id="tshirt-quantity" style="height: 26px;">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6</option>
-                            <option>7</option>
-                            <option>8</option>
-                            <option>9</option>
-                            <option>10</option>
-                </tr>
                 </td>
 
                 <td colspan="2"><label style="font-size: 24px;">Delivery Address:</label>
