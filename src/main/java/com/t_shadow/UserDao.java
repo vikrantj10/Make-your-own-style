@@ -83,15 +83,16 @@ public class UserDao {
 			list.add(sdd);
 		}
 	}
-	public boolean UpdateOrder(int order_id) throws ClassNotFoundException, SQLException
+	public boolean UpdateOrder(int order_id,String date) throws ClassNotFoundException, SQLException
 	{
 		boolean f = false;
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/t_shadow","root","root");
-		String query = "update order_details set ordered_status = \"Checked\",ordered_delievery = \"30 sept\" where order_id = ?;";
+		String query = "update order_details set ordered_status = \"Checked\",ordered_delievery = ? where order_id = ?;";
 		PreparedStatement ps = con.prepareStatement(query);
-		ps.setInt(1, order_id);
-		ps.executeUpdate();
+		ps.setString(1, date);
+		ps.setInt(2, order_id);
+		if(ps.executeUpdate()>0)
 		f=true;
 		return f;
 		

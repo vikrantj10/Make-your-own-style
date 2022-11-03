@@ -17,7 +17,8 @@ if(dm==null)
 response.setHeader("cache-control","no-cache,no-store,must-revalidate");
 UserDao ud = new UserDao();
 int order_id = Integer.parseInt(request.getParameter("order_id"));
-boolean result = ud.UpdateOrder(order_id);
+String date = request.getParameter("date");
+boolean result = ud.UpdateOrder(order_id,date);
 if(result)
 	response.sendRedirect("UpdateOrderPage.jsp");
 else

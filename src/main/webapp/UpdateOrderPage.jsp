@@ -18,7 +18,8 @@ if(dm==null)
 response.setHeader("cache-control","no-cache,no-store,must-revalidate");
 %>
 <form action="UpdateOrder.jsp" method="post">
-<input type="text" name="order_id">
+<input type="text" name="order_id" value="Enter Order_id">
+<input type="date" name="date" value="Enter Delivery Date">
 <input type="submit" value="update">
 </form>
 </body>
