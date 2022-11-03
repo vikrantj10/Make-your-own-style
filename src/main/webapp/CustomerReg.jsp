@@ -15,7 +15,7 @@ String Email = request.getParameter("Email");
 String password = request.getParameter("password");
 String State = request.getParameter("State");
 String City = request.getParameter("City");
-String Street = request.getParameter("Street");
+String Street = request.getParameter("Street"); // i love youuuuuuu
 
 CustomerModel cm = new CustomerModel();
 cm.setFirst_Name(First_Name);
