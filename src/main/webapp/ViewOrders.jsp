@@ -70,7 +70,7 @@ response.setHeader("cache-control","no-cache,no-store,must-revalidate");
                <div style="width: 95%; height: 700%; margin-left: 55px;margin-top: 1%; border-radius: 30px;
                    background: rgba(255,255,255,0.5)" >
                   <table>
-    <div>
+    <div style="margin-top:3rem">
       
        
       
@@ -114,7 +114,7 @@ for(ShowDesignerDetails sdd : list)
 %>
 <tr style="background-color: whitesmoke">
     <td style="font-size: 20px;"><%= sdd.getOrder_id() %></td>
-    <td style="font-size: 20px;"><img src="images/<%=sdd.getImage()%>" class="img1"></td>
+    <td style="font-size: 20px;"><img src="images/<%=sdd.getImage()%>" style="width:44rem"class="img1"></td>
     <td style="font-size: 20px;"><%= sdd.getFirst_name() %></td>
     <td style="font-size: 20px;"><%= sdd.getLast_name() %></td>
     <td style="font-size: 20px;"><%= sdd.getMobile_no() %></td>
