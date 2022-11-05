@@ -34,7 +34,7 @@ public class AddImage extends HttpServlet {
 		String imageFileName=file.getSubmittedFileName();  // get selected image file name
 		System.out.println("Selected Image File Name : "+imageFileName);
 		
-		String uploadPath="D:/T_Shadow-main/src/main/webapp/images/"+imageFileName;  // upload path where we have to upload our actual image
+		String uploadPath="C:/Users/hp/Documents/GitHub/Make-your-own-style/src/main/webapp/images/"+imageFileName;  // upload path where we have to upload our actual image
 		System.out.println("Upload Path : "+uploadPath);
 		
 		// Uploading our selected image into the images folder

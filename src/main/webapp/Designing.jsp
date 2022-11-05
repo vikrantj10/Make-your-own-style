@@ -124,7 +124,7 @@ response.setHeader("cache-control","no-cache,no-store,must-revalidate");
         </div>
         <button onclick="myFunction()"
             style="height: 42%; border-radius: 17px;margin-left: 7%;
-    margin-top: -12%;">Download Tshirt</button>
+    margin-top: -8%;">Download Tshirt</button>
         <p style="margin-left: 33%;font-size: 16px;"">To remove a loaded picture on the T-Shirt select it and press the <kbd>DEL</kbd> key.</p>
                             <!-- The select that will allow the user to pick one of the static designs -->
                             <br>
