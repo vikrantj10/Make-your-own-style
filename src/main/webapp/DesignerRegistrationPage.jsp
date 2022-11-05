@@ -35,10 +35,8 @@
         <table width="37%" style="float: right; margin-top: 2%;">
           
             <tr align="center">
-            <td class="tdtheme"><a href="home.jsp" style="color:whitesmoke;">HOME</td>
-            <td class="tdtheme"><a href="About.jsp" style="color:whitesmoke;">ABOUT</td>
-            <td class="tdtheme"><a href="Contact.jsp" style="color:whitesmoke;">CONTACT US</td>
-            <td class="tdtheme"><a href="UserForm.jsp" style="color:whitesmoke;">SIGN UP</td>
+            <td class="tdtheme"><a href="index.jsp" style="color:whitesmoke;">HOME</td>
+            <td class="tdtheme"><a href="DesignerLoginPage.jsp" style="color:whitesmoke;">Designer Login</td>
             </tr>
             <img src="tlogo.png" style=" width: 14%; border-radius: 12px; margin-top:0.2%;margin-left: 0.5%;">
         </div>
@@ -51,7 +49,7 @@
                 style=" border: solid;border-color: black; border-radius: 5%;width:35%; margin:auto ">
                 <table cellspacing="10" align="center">
                     <tr align="center" bgcolor="darkblue">
-                        <td colspan="2" style="font-size:35px;color:white;font-weight:bold">Sign UP (User)
+                        <td colspan="2" style="font-size:35px;color:white;font-weight:bold">Sign Up
                     </tr>
                     </td>
                     <tr>

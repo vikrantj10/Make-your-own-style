@@ -46,12 +46,8 @@ response.setHeader("cache-control","no-cache,no-store,must-revalidate");
         <table width="71%" style="float: right; margin-top: 2%;">
           
             <tr align=" center">
-            <td class="tdtheme"><a href="home.jsp" style="color:whitesmoke;">HOME</td>
+            <td class="tdtheme"><a href="DesignerWelcomePage.jsp" style="color:whitesmoke;">HOME</td>
             <td class="tdtheme"><a href="ViewOrders.jsp" style="color:whitesmoke;">View Orders</td>
-            <td class="tdtheme"><a href="ViewFeedback.jsp" style="color:whitesmoke;">View Feedback</td>
-            <td class="tdtheme"><a href="ViewComplain.jsp" style="color:whitesmoke;">View Complains</td>
-            <td class="tdtheme"><a href="ViewMessage.jsp" style="color:whitesmoke;">View Message</td>
-            <td class="tdtheme"><a href="" style="color:whitesmoke;">Edit-Profile</td>
             <td class="tdtheme"><a href="DesignerLogOut.jsp" style="color:whitesmoke;">LOG OUT
 
 

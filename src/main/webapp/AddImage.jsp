@@ -27,12 +27,10 @@ response.setHeader("cache-control","no-cache,no-store,must-revalidate");
         <table width="65%" style="float: right; margin-top: 2%;">
           
             <tr align=" center">
-            <td class="tdtheme"><a href="home.jsp" style="color:whitesmoke;">HOME</td>
-            <td class="tdtheme"><a href="Designing.jsp" style="color:whitesmoke;">Designing Studio</td>
-            <td class="tdtheme"><a href="CustomerViewOrders.jsp" style="color:whitesmoke;">View Orders</td>
-            <td class="tdtheme"><a href="Complain.jsp" style="color:whitesmoke;">Complain</td>
-            <td class="tdtheme"><a href="Edit.jsp" style="color:whitesmoke;">Edit-Profile</td>
-            <td class="tdtheme"><a href="CustomerLogOut.jsp" style="color:whitesmoke;">LOG OUT
+            <td class="tdtheme"><a href="CustomerWelcomePage.jsp" style="color:whitesmoke;text-decoration:none">HOME</td>
+            <td class="tdtheme"><a href="Designing.jsp" style="color:whitesmoke;text-decoration:none">Designing Studio</td>
+            <td class="tdtheme"><a href="CustomerViewOrders.jsp" style="color:whitesmoke;text-decoration:none">View Orders</td>
+            <td class="tdtheme"><a href="CustomerLogOut.jsp" style="color:whitesmoke;text-decoration:none">LOG OUT
 
 
                     </tr>

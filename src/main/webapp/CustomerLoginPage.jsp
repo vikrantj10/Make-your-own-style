@@ -34,11 +34,8 @@
         <table width="40%" style="float: right; margin-top: 2%;">
           
             <tr align=" center">
-            <td class="tdtheme"><a href="home.jsp" style="color:whitesmoke;">HOME</td>
-            <td class="tdtheme"><a href="" style="color:whitesmoke;">ABOUT</td>
-            <td class="tdtheme"><a href="" style="color:whitesmoke;">CONTACT US</td>
-
-            <td class="tdtheme"><a href="UserForm.jsp" style="color:whitesmoke;">SIGN UP
+            <td class="tdtheme"><a href="index.jsp" style="color:whitesmoke;">HOME</td>
+            <td class="tdtheme"><a href="CustomerRegistrationPage.jsp" style="color:whitesmoke;">Customer Registration</td>
 
     </div>
 
